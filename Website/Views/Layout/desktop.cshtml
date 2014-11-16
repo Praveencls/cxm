@@ -1,0 +1,13 @@
+﻿@using Sitecore.Mvc
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>@Page.Title</title>
+        
+    </head>
+    <body>
+@*        @RenderBody()*@
+        @Html.Sitecore().Placeholder("content")
+    </body>
+</html>

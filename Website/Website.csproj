@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6726B662-B192-439B-AB04-36B1E8F47993}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Website</RootNamespace>
+    <AssemblyName>Website</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <DontImportPostSharp>True</DontImportPostSharp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Glimpse.AspNet">
+      <HintPath>packages\Glimpse.AspNet.1.9.2\lib\net45\Glimpse.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Glimpse.Core">
+      <HintPath>packages\Glimpse.1.8.6\lib\net45\Glimpse.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Glimpse.Mvc5">
+      <HintPath>packages\Glimpse.Mvc5.1.5.3\lib\net45\Glimpse.Mvc5.dll</HintPath>
+    </Reference>
+    <Reference Include="Glimpse.Performance">
+      <HintPath>packages\Glimpse.Performance.1.0.0.3\lib\net4\Glimpse.Performance.dll</HintPath>
+    </Reference>
+    <Reference Include="Kamsar.WebConsole">
+      <HintPath>packages\Kamsar.WebConsole.1.2.2.0\lib\net40\Kamsar.WebConsole.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject">
+      <HintPath>packages\Ninject.3.0.1.10\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="PostSharp, Version=4.0.36.0, Culture=neutral, PublicKeyToken=b13fd38b8f9c99d7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\PostSharp.4.0.36\lib\net35-client\PostSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Glimpse">
+      <HintPath>packages\Glimpse.Sitecore7.2.0.0\lib\net45\Sitecore.Glimpse.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Kernel, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Sitecore.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Sitecore.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Ship.AspNet">
+      <HintPath>packages\Sitecore.Ship.AspNet.0.3.5\lib\net40\Sitecore.Ship.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Ship.Core">
+      <HintPath>packages\Sitecore.Ship.AspNet.0.3.5\lib\net40\Sitecore.Ship.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Ship.Infrastructure">
+      <HintPath>packages\Sitecore.Ship.AspNet.0.3.5\lib\net40\Sitecore.Ship.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.Mvc.5.2.2\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.Razor.3.2.2\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Unicorn">
+      <HintPath>packages\Unicorn.2.0.4\lib\net45\Unicorn.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="layouts\QueryableRulesRunner.ascx" />
+    <Content Include="layouts\Sample Datasource Sublayout.ascx" />
+    <Content Include="layouts\Sample Inner Sublayout.ascx" />
+    <Content Include="layouts\Sample layout.aspx" />
+    <Content Include="layouts\Sample Sublayout.ascx" />
+    <Content Include="layouts\system\VIChecker.aspx" />
+    <Content Include="layouts\system\VisitorIdentification.ascx" />
+    <Content Include="layouts\system\VisitorIdentification.aspx" />
+    <Content Include="layouts\system\VisitorIdentification.js" />
+    <Content Include="layouts\system\VisitorIdentificationCss.aspx" />
+    <Content Include="layouts\xmlcontrol.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="App_Config\Commands.config" />
+    <Content Include="App_Config\ConnectionStrings.config" />
+    <Content Include="App_Config\ConnectionStringsOracle.config" />
+    <Content Include="App_Config\FieldTypes.config" />
+    <Content Include="App_Config\Icons.config" />
+    <Content Include="App_Config\Include\DataFolder.config" />
+    <Content Include="App_Config\Include\EventHandler.config.example" />
+    <Content Include="App_Config\Include\ExperienceProfile\Sitecore.ExperienceProfile.Client.config" />
+    <Content Include="App_Config\Include\ExperienceProfile\Sitecore.ExperienceProfile.config" />
+    <Content Include="App_Config\Include\ExperienceProfile\Sitecore.ExperienceProfile.Reporting.config" />
+    <Content Include="App_Config\Include\ForwardingSecurityEvents.config.example" />
+    <Content Include="App_Config\Include\ja-JP.config.example" />
+    <Content Include="App_Config\Include\LiveMode.config.example" />
+    <Content Include="App_Config\Include\ScalabilitySettings.config.example" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.Automation.TimeoutProcessing.config" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.config" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.ExcludeRobots.config" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.Model.config" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.MongoDb.config" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.Processing.Aggregation.config" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.Processing.Aggregation.ProcessingPools.config" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.Processing.Aggregation.Services.config" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.Processing.config" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.Processing.Services.config" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.Reporting.config" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.Reporting.RemoteClient.config.disabled" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.Reporting.RemoteServer.config.disabled" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.Tracking.Aggregation.config" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.Tracking.config" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.Tracking.Database.config" />
+    <Content Include="App_Config\Include\Sitecore.Analytics.Tracking.RobotDetection.config" />
+    <Content Include="App_Config\Include\Sitecore.AntiCsrf.config" />
+    <Content Include="App_Config\Include\Sitecore.Apps.TagInjection.config" />
+    <Content Include="App_Config\Include\Sitecore.Buckets.config" />
+    <Content Include="App_Config\Include\Sitecore.Buckets.Scaling.config.example" />
+    <Content Include="App_Config\Include\Sitecore.Buckets.WarmupQueries.config.example" />
+    <Content Include="App_Config\Include\Sitecore.Cloud.Xdb.config.disabled" />
+    <Content Include="App_Config\Include\Sitecore.ContentSearch.Analytics.config" />
+    <Content Include="App_Config\Include\Sitecore.ContentSearch.config" />
+    <Content Include="App_Config\Include\Sitecore.ContentSearch.DefaultConfigurations.config" />
+    <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.DefaultIndexConfiguration.config" />
+    <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.Index.Analytics.config" />
+    <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.Index.Core.config" />
+    <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.Index.Master.config" />
+    <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.Index.Web.config" />
+    <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.Indexes.Sharded.Core.config.example" />
+    <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.Indexes.Sharded.Master.config.example" />
+    <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.Indexes.Sharded.Web.config.example" />
+    <Content Include="App_Config\Include\Sitecore.ContentSearch.VerboseLogging.config.example" />
+    <Content Include="App_Config\Include\Sitecore.Glimpse.config" />
+    <Content Include="App_Config\Include\Sitecore.ItemWebApi.config" />
+    <Content Include="App_Config\Include\Sitecore.Media.RequestProtection.config" />
+    <Content Include="App_Config\Include\Sitecore.Mvc.config" />
+    <Content Include="App_Config\Include\Sitecore.MvcAnalytics.config" />
+    <Content Include="App_Config\Include\Sitecore.MvcExperienceEditor.config" />
+    <Content Include="App_Config\Include\Sitecore.MvcSimulator.config" />
+    <Content Include="App_Config\Include\Sitecore.PipelineProfiling.config.disabled" />
+    <Content Include="App_Config\Include\Sitecore.Publishing.DedicatedInstance.config.example" />
+    <Content Include="App_Config\Include\Sitecore.Publishing.EventProvider.Async.config.disabled" />
+    <Content Include="App_Config\Include\Sitecore.Publishing.Optimizations.config.example" />
+    <Content Include="App_Config\Include\Sitecore.Publishing.Parallel.config.disabled" />
+    <Content Include="App_Config\Include\Sitecore.Publishing.Recovery.config.example" />
+    <Content Include="App_Config\Include\Sitecore.SegmentBuilder.config" />
+    <Content Include="App_Config\Include\Sitecore.Services.Client.config" />
+    <Content Include="App_Config\Include\Sitecore.Shell.MarketingAutomation.config" />
+    <Content Include="App_Config\Include\Sitecore.Speak.Applications.config" />
+    <Content Include="App_Config\Include\Sitecore.Speak.config" />
+    <Content Include="App_Config\Include\Sitecore.Speak.ItemWebApi.config" />
+    <Content Include="App_Config\Include\Sitecore.Speak.Mvc.config" />
+    <Content Include="App_Config\Include\Sitecore.WebDAV.config" />
+    <Content Include="App_Config\Include\SitecoreSettings.config.example" />
+    <Content Include="App_Config\Include\SiteDefinition.config.example" />
+    <Content Include="App_Config\Include\WebDeploy.config.example" />
+    <Content Include="App_Config\Include\XslExtension.config.example" />
+    <Content Include="App_Config\LanguageDefinitions.config" />
+    <Content Include="App_Config\MimeTypes.config" />
+    <Content Include="App_Config\Portraits.config" />
+    <Content Include="App_Config\Prefetch\Common.config" />
+    <Content Include="App_Config\Prefetch\Core.config" />
+    <Content Include="App_Config\Prefetch\Master.config" />
+    <Content Include="App_Config\Prefetch\Webdb.config" />
+    <Content Include="App_Config\Prototypes.config" />
+    <Content Include="App_Config\Security\Domains.config" />
+    <Content Include="App_Config\Security\GlobalRoles.config" />
+    <Content Include="App_Config\XamlSharp.config" />
+    <Content Include="App_Config\Include\Serialization.config" />
+    <Content Include="App_Config\Include\ship.config" />
+    <None Include="Properties\PublishProfiles\dmsgit.pubxml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Services\Rio.svc" />
+    <Content Include="Views\Hello\Index.cshtml" />
+    <Content Include="Views\Layout\desktop.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\viewr.cshtml" />
+    <Content Include="Views\web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HelloController.cs" />
+    <Compile Include="GlimpsePerformance.cs" />
+    <Compile Include="GlimpseSecurityPolicy.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\IRio.cs" />
+    <Compile Include="Services\Rio.svc.cs">
+      <DependentUpon>Rio.svc</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="layouts\debug\" />
+    <Folder Include="Models\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59270/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="packages\PostSharp.4.0.36\tools\PostSharp.targets" Condition="Exists('packages\PostSharp.4.0.36\tools\PostSharp.targets')" />
+  <Target Name="EnsurePostSharpImported" BeforeTargets="BeforeBuild" Condition="'$(PostSharp30Imported)' == ''">
+    <Error Condition="!Exists('packages\PostSharp.4.0.36\tools\PostSharp.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://www.postsharp.net/links/nuget-restore." />
+    <Error Condition="Exists('packages\PostSharp.4.0.36\tools\PostSharp.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://www.postsharp.net/links/nuget-restore." />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
