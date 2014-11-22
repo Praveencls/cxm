@@ -20,7 +20,6 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
-    <DontImportPostSharp>True</DontImportPostSharp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,6 +39,30 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Castle.Core">
+      <HintPath>packages\Castle.Core.3.2.2\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor">
+      <HintPath>packages\Castle.Windsor.3.2.1\lib\net45\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="Glass.Mapper">
+      <HintPath>packages\Glass.Mapper.3.0.13.25\lib\net45\Glass.Mapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Glass.Mapper.Sc">
+      <HintPath>packages\Glass.Mapper.Sc.3.2.2.45\lib\net45\Glass.Mapper.Sc.dll</HintPath>
+    </Reference>
+    <Reference Include="Glass.Mapper.Sc.CastleWindsor">
+      <HintPath>packages\Glass.Mapper.Sc.CastleWindsor.3.2.1.23\lib\net45\Glass.Mapper.Sc.CastleWindsor.dll</HintPath>
+    </Reference>
+    <Reference Include="Glass.Mapper.Sc.Mvc">
+      <HintPath>packages\Glass.Mapper.Sc.Mvc-5.3.2.1.42\lib\net45\Glass.Mapper.Sc.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Glass.Mapper.Sc.Razor">
+      <HintPath>packages\Glass.Mapper.Sc.Razor.3.0.9.17\lib\net45\Glass.Mapper.Sc.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Glass.Mapper.Sc.Razor.CastleWindsor">
+      <HintPath>packages\Glass.Mapper.Sc.Razor.CastleWindsor.3.0.3.7\lib\net45\Glass.Mapper.Sc.Razor.CastleWindsor.dll</HintPath>
+    </Reference>
     <Reference Include="Glimpse.AspNet">
       <HintPath>packages\Glimpse.AspNet.1.9.2\lib\net45\Glimpse.AspNet.dll</HintPath>
     </Reference>
@@ -48,9 +71,6 @@
     </Reference>
     <Reference Include="Glimpse.Mvc5">
       <HintPath>packages\Glimpse.Mvc5.1.5.3\lib\net45\Glimpse.Mvc5.dll</HintPath>
-    </Reference>
-    <Reference Include="Glimpse.Performance">
-      <HintPath>packages\Glimpse.Performance.1.0.0.3\lib\net4\Glimpse.Performance.dll</HintPath>
     </Reference>
     <Reference Include="Kamsar.WebConsole">
       <HintPath>packages\Kamsar.WebConsole.1.2.2.0\lib\net40\Kamsar.WebConsole.dll</HintPath>
@@ -69,13 +89,15 @@
     <Reference Include="Ninject">
       <HintPath>packages\Ninject.3.0.1.10\lib\net45-full\Ninject.dll</HintPath>
     </Reference>
-    <Reference Include="PostSharp, Version=4.0.36.0, Culture=neutral, PublicKeyToken=b13fd38b8f9c99d7, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>packages\PostSharp.4.0.36\lib\net35-client\PostSharp.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="RazorEngine">
+      <HintPath>packages\RazorEngine.3.2.0\lib\net40\RazorEngine.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Glimpse">
       <HintPath>packages\Glimpse.Sitecore7.2.0.0\lib\net45\Sitecore.Glimpse.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ItemWebApi, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Sitecore.ItemWebApi.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Kernel, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -86,18 +108,16 @@
       <HintPath>bin\Sitecore.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Ship">
-      <HintPath>packages\Sitecore.Ship.0.3.5\lib\net40\Sitecore.Ship.dll</HintPath>
+      <HintPath>..\lib\Sitecore.Ship.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Ship.AspNet">
-      <HintPath>packages\Sitecore.Ship.AspNet.0.3.5\lib\net40\Sitecore.Ship.AspNet.dll</HintPath>
+      <HintPath>..\lib\Sitecore.Ship.AspNet.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Ship.Core, Version=0.3.5.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>packages\Sitecore.Ship.0.3.5\lib\net40\Sitecore.Ship.Core.dll</HintPath>
+    <Reference Include="Sitecore.Ship.Core">
+      <HintPath>..\lib\Sitecore.Ship.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Ship.Infrastructure, Version=0.3.5.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>packages\Sitecore.Ship.0.3.5\lib\net40\Sitecore.Ship.Infrastructure.dll</HintPath>
+    <Reference Include="Sitecore.Ship.Infrastructure">
+      <HintPath>..\lib\Sitecore.Ship.Infrastructure.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
@@ -145,21 +165,21 @@
     <Reference Include="Unicorn">
       <HintPath>packages\Unicorn.2.0.4\lib\net45\Unicorn.dll</HintPath>
     </Reference>
+    <Reference Include="WebActivatorEx">
+      <HintPath>packages\WebActivatorEx.2.0.5\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Data\Packages\Glass.Mapper.Sc.Razor.Package.xml" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="layouts\QueryableRulesRunner.ascx" />
-    <Content Include="layouts\Sample Datasource Sublayout.ascx" />
-    <Content Include="layouts\Sample Inner Sublayout.ascx" />
-    <Content Include="layouts\Sample layout.aspx" />
-    <Content Include="layouts\Sample Sublayout.ascx" />
-    <Content Include="layouts\system\VIChecker.aspx" />
-    <Content Include="layouts\system\VisitorIdentification.ascx" />
-    <Content Include="layouts\system\VisitorIdentification.aspx" />
-    <Content Include="layouts\system\VisitorIdentification.js" />
-    <Content Include="layouts\system\VisitorIdentificationCss.aspx" />
-    <Content Include="layouts\xmlcontrol.aspx" />
     <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="App_Config\Commands.config" />
     <Content Include="App_Config\ConnectionStrings.config" />
     <Content Include="App_Config\ConnectionStringsOracle.config" />
@@ -210,7 +230,9 @@
     <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.Indexes.Sharded.Web.config.example" />
     <Content Include="App_Config\Include\Sitecore.ContentSearch.VerboseLogging.config.example" />
     <Content Include="App_Config\Include\Sitecore.Glimpse.config" />
-    <Content Include="App_Config\Include\Sitecore.ItemWebApi.config" />
+    <Content Include="App_Config\Include\Sitecore.ItemWebApi.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="App_Config\Include\Sitecore.Media.RequestProtection.config" />
     <Content Include="App_Config\Include\Sitecore.Mvc.config" />
     <Content Include="App_Config\Include\Sitecore.MvcAnalytics.config" />
@@ -246,8 +268,12 @@
     <Content Include="App_Config\Security\GlobalRoles.config" />
     <Content Include="App_Config\XamlSharp.config" />
     <Content Include="App_Config\Include\Serialization.config" />
+    <Content Include="App_Config\Include\Glass.Mapper.Sc.CodeFirst.config.exclude" />
+    <Content Include="Data\Packages\Glass.Mapper.Sc.Razor.Package.zip" />
+    <Content Include="App_Config\Include\Glass.Mapper.Sc.Razor.config" />
+    <Content Include="App_Config\Include\Glass.Mapper.Sc.Mvc.Config" />
+    <Content Include="App_Config\Include\XMLWebApi.config" />
     <Content Include="App_Config\Include\ship.config" />
-    <None Include="Properties\PublishProfiles\dmsgit.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -259,33 +285,46 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Services\Rio.svc" />
-    <Content Include="Views\Hello\Index.cshtml" />
-    <Content Include="Views\Layout\desktop.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\viewr.cshtml" />
-    <Content Include="Views\web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="RioServices\Rio.svc" />
+    <Content Include="sitecore modules\Shell\Glass\Mapper\Razor\BehindRazor.xml" />
+    <Content Include="sitecore modules\Shell\Glass\Mapper\Razor\DynamicRazor.xml" />
+    <Content Include="sitecore modules\Shell\Glass\Mapper\Razor\TypedRazor.xml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Hello\Index.cshtml" />
+    <Content Include="Views\Layout\desktop.cshtml" />
+    <Content Include="Views\viewr.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\GlassMapperSc.cs" />
+    <Compile Include="App_Start\GlassMapperScCustom.cs" />
+    <Compile Include="App_Start\GlassMapperScRazor.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HelloController.cs" />
-    <Compile Include="GlimpsePerformance.cs" />
+    <Compile Include="CoreLib\WebItemAPI\SwitchToXmlSerializer.cs" />
+    <Compile Include="CoreLib\WebItemAPI\XmlSerializer.cs" />
     <Compile Include="GlimpseSecurityPolicy.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\demo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\IRio.cs" />
-    <Compile Include="Services\Rio.svc.cs">
+    <Compile Include="RioServices\IRio.cs" />
+    <Compile Include="RioServices\Rio.svc.cs">
       <DependentUpon>Rio.svc</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\DemoViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="sitecore modules\Shell\Glass\Mapper\Razor\Templates\TypedRazorTemplate.cshtml.temp" />
+    <Content Include="sitecore modules\Shell\Glass\Mapper\Razor\Templates\DynamicRazorTemplate.cshtml.temp" />
+    <Content Include="sitecore modules\Shell\Glass\Mapper\Razor\Templates\BehindRazorTemplate.cshtml.temp" />
+    <Content Include="sitecore modules\Shell\Glass\Mapper\Razor\Templates\BehindRazorTemplate.cshtml.cs.temp" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -294,9 +333,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="layouts\debug\" />
-    <Folder Include="Models\" />
-    <Folder Include="ViewModels\" />
+    <Folder Include="sitecore modules\debug\" />
+    <Folder Include="sitecore modules\Web\" />
+    <Folder Include="Web\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -323,11 +362,6 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  <Import Project="packages\PostSharp.4.0.36\tools\PostSharp.targets" Condition="Exists('packages\PostSharp.4.0.36\tools\PostSharp.targets')" />
-  <Target Name="EnsurePostSharpImported" BeforeTargets="BeforeBuild" Condition="'$(PostSharp30Imported)' == ''">
-    <Error Condition="!Exists('packages\PostSharp.4.0.36\tools\PostSharp.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://www.postsharp.net/links/nuget-restore." />
-    <Error Condition="Exists('packages\PostSharp.4.0.36\tools\PostSharp.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://www.postsharp.net/links/nuget-restore." />
-  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

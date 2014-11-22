@@ -8,7 +8,7 @@ using System.Text;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 
-namespace Website.Services
+namespace Website.RioServices
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IRio" in both code and config file together.
     [ServiceContract]

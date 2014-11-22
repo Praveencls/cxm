@@ -1,1 +1,1 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="Website.Services.Rio" CodeBehind="Rio.svc.cs" %>
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Website.RioServices.Rio" CodeBehind="Rio.svc.cs" %>
