@@ -290,6 +290,8 @@
     <Content Include="App_Config\Include\Glass.Mapper.Sc.Mvc.Config" />
     <Content Include="App_Config\Include\XMLWebApi.config" />
     <Content Include="App_Config\Include\ship.config" />
+    <Content Include="xsl\sample rendering.xslt" />
+    <Content Include="xsl\system\WebEdit\Hidden Rendering.xslt" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -360,6 +362,7 @@
     <Folder Include="sitecore modules\debug\" />
     <Folder Include="sitecore modules\Web\" />
     <Folder Include="Web\" />
+    <Folder Include="xsl\WebEdit\System\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
