@@ -2,12 +2,19 @@
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>@Page.Title</title>
-        
-    </head>
-    <body>
-@*        @RenderBody()*@
-        @Html.Sitecore().Placeholder("content")
-    </body>
+<head>
+    <title>@Page.Title</title>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/customangularapp.js"></script>
+</head>
+<body ng-app="controllerAsExample">
+    @*        @RenderBody()*@
+    @Html.Sitecore().Placeholder("content")
+    <div ng-controller="CallWebApi">
+        <ul>
+            <li ng:repeat="d in mydata">{{d.DisplayName}}</li>
+        </ul>
+    </div>
+</body>
 </html>

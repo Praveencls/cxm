@@ -457,10 +457,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/15/2014 17:44:52</publishTime>
     </File>
     <File Include="bin/Website.dll">
-      <publishTime>11/26/2014 03:33:31</publishTime>
+      <publishTime>11/27/2014 06:52:55</publishTime>
     </File>
     <File Include="bin/Website.pdb">
-      <publishTime>11/26/2014 03:33:31</publishTime>
+      <publishTime>11/27/2014 06:52:55</publishTime>
     </File>
     <File Include="Content/bootstrap.css">
       <publishTime>11/15/2014 10:59:58</publishTime>
@@ -534,11 +534,17 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="RioServices/Rio.svc">
       <publishTime>11/20/2014 07:57:37</publishTime>
     </File>
+    <File Include="Scripts/angular.js">
+      <publishTime>01/02/1601 23:14:41</publishTime>
+    </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>11/15/2014 10:59:58</publishTime>
     </File>
     <File Include="Scripts/bootstrap.min.js">
       <publishTime>11/15/2014 10:59:58</publishTime>
+    </File>
+    <File Include="Scripts/customangularapp.js">
+      <publishTime>11/27/2014 07:00:02</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.js">
       <publishTime>11/15/2014 10:59:51</publishTime>
@@ -560,6 +566,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Scripts/jquery.validate.unobtrusive.min.js">
       <publishTime>11/15/2014 10:59:58</publishTime>
+    </File>
+    <File Include="Scripts/json3.min.js">
+      <publishTime>01/02/1601 23:14:41</publishTime>
     </File>
     <File Include="Scripts/modernizr-2.6.2.js">
       <publishTime>11/15/2014 10:59:58</publishTime>
@@ -589,13 +598,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/15/2014 11:00:02</publishTime>
     </File>
     <File Include="Views/Layout/desktop.cshtml">
-      <publishTime>11/15/2014 12:17:21</publishTime>
+      <publishTime>11/27/2014 07:02:39</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
       <publishTime>11/15/2014 11:00:00</publishTime>
     </File>
     <File Include="Views/viewr.cshtml">
-      <publishTime>11/22/2014 19:18:09</publishTime>
+      <publishTime>11/27/2014 06:58:53</publishTime>
     </File>
     <File Include="Views/web.config">
       <publishTime>11/15/2014 18:36:55</publishTime>
@@ -605,6 +614,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Web.config">
       <publishTime>11/22/2014 23:22:06</publishTime>
+    </File>
+    <File Include="xsl/sample rendering.xslt">
+      <publishTime>10/03/2014 00:15:18</publishTime>
+    </File>
+    <File Include="xsl/system/WebEdit/Hidden Rendering.xslt">
+      <publishTime>10/03/2014 00:15:18</publishTime>
     </File>
   </ItemGroup>
 </Project>

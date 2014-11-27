@@ -290,6 +290,9 @@
     <Content Include="App_Config\Include\Glass.Mapper.Sc.Mvc.Config" />
     <Content Include="App_Config\Include\XMLWebApi.config" />
     <Content Include="App_Config\Include\ship.config" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\customangularapp.js" />
+    <Content Include="Scripts\json3.min.js" />
     <Content Include="xsl\sample rendering.xslt" />
     <Content Include="xsl\system\WebEdit\Hidden Rendering.xslt" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
