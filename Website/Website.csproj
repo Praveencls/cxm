@@ -290,11 +290,6 @@
     <Content Include="App_Config\Include\Glass.Mapper.Sc.Mvc.Config" />
     <Content Include="App_Config\Include\XMLWebApi.config" />
     <Content Include="App_Config\Include\ship.config" />
-    <Content Include="Scripts\angular.js" />
-    <Content Include="Scripts\customangularapp.js" />
-    <Content Include="Scripts\json3.min.js" />
-    <Content Include="xsl\sample rendering.xslt" />
-    <Content Include="xsl\system\WebEdit\Hidden Rendering.xslt" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -328,7 +323,6 @@
     <Compile Include="Controllers\HelloController.cs" />
     <Compile Include="CoreLib\WebItemAPI\SwitchToXmlSerializer.cs" />
     <Compile Include="CoreLib\WebItemAPI\XmlSerializer.cs" />
-    <Compile Include="DropDownDTO.cs" />
     <Compile Include="GlimpseSecurityPolicy.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -341,7 +335,6 @@
       <DependentUpon>wild.ascx</DependentUpon>
     </Compile>
     <Compile Include="Models\demo.cs" />
-    <Compile Include="PersonalizedFormsDropLink .cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RioServices\IRio.cs" />
     <Compile Include="RioServices\Rio.svc.cs">
@@ -367,7 +360,6 @@
     <Folder Include="sitecore modules\debug\" />
     <Folder Include="sitecore modules\Web\" />
     <Folder Include="Web\" />
-    <Folder Include="xsl\WebEdit\System\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

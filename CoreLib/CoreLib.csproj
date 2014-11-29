@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\..\..\lib\HtmlAgilityPack.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.ItemWebApi, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Website\bin\Sitecore.ItemWebApi.dll</HintPath>
@@ -38,6 +41,7 @@
       <HintPath>..\lib\Sitecore.Kernel.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
@@ -47,6 +51,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base\lib\Data\Fields\Field\GetFriendlyValueExtension.cs" />
+    <Compile Include="Base\lib\Data\Fields\MultilistField\GetItemsBySourceOrderExtension.cs" />
+    <Compile Include="Base\lib\Data\Items\Item\ExistsInDatabaseExtension.cs" />
+    <Compile Include="Base\lib\Data\Items\Item\GetIconExtension.cs" />
+    <Compile Include="Base\lib\Data\Items\Item\GetPublishingTargetsExtension.cs" />
+    <Compile Include="Base\lib\Data\Items\Item\GetUrlExtension.cs" />
+    <Compile Include="Base\lib\Data\Items\Item\GetVersionLinksExtension.cs" />
+    <Compile Include="Base\lib\Data\Items\Item\HasPublishingRestrictionsExtension.cs" />
+    <Compile Include="Base\lib\Data\Items\Item\IsLatestExtension.cs" />
+    <Compile Include="Base\lib\Data\Items\Item\IsSameRevisionExtension.cs" />
+    <Compile Include="Base\lib\Data\Validators\FieldValidators\TagValidator.cs" />
+    <Compile Include="Base\lib\Diagnostics\Logger.cs" />
+    <Compile Include="Base\lib\Publishing\PublishingException.cs" />
+    <Compile Include="Base\lib\Publishing\PublishingTarget.cs" />
+    <Compile Include="Base\lib\Publishing\ReferencePublishingHelper.cs" />
+    <Compile Include="Base\lib\Shell\Framework\Commands\System\Debug.cs" />
+    <Compile Include="Base\lib\Sites\SiteContext\GetMediaHostExtension.cs" />
+    <Compile Include="Base\lib\Sites\SiteContext\GetNotFoundItemExtension.cs" />
+    <Compile Include="Base\lib\SystemString\NthIndexExtension.cs" />
+    <Compile Include="Base\lib\Web\SiteInfo\GetLanguageEmbeddingExtension.cs" />
+    <Compile Include="Base\lib\Web\UI\ErrorHelper.cs" />
+    <Compile Include="Base\lib\Web\UI\WebControls\ErrorRedirector.cs" />
+    <Compile Include="Base\lib\Web\Url.cs" />
+    <Compile Include="Base\lib\Web\WebUtil.cs" />
+    <Compile Include="Base\lib\Workflow\Actions\AddVersion.cs" />
+    <Compile Include="Base\lib\Workflow\Actions\ValidateApprover.cs" />
+    <Compile Include="Base\SublayoutBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\SublayoutParameterHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebItemAPI\SwitchToXmlSerializer.cs" />
     <Compile Include="WebItemAPI\XmlSerializer.cs" />
