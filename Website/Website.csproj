@@ -340,6 +340,7 @@
     </Compile>
     <Compile Include="layouts\wild.ascx.cs">
       <DependentUpon>wild.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="layouts\wild.ascx.designer.cs">
       <DependentUpon>wild.ascx</DependentUpon>
