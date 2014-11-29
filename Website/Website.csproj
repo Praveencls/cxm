@@ -301,10 +301,8 @@
     <Content Include="App_Config\Include\XMLWebApi.config" />
     <Content Include="App_Config\Include\ship.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\customangularapp.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -312,7 +310,6 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\json3.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="RioServices\Rio.svc" />
     <Content Include="sitecore modules\Shell\Glass\Mapper\Razor\BehindRazor.xml" />
@@ -330,7 +327,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\GlassMapperSc.cs" />
     <Compile Include="App_Start\GlassMapperScCustom.cs" />
     <Compile Include="App_Start\GlassMapperScRazor.cs" />
@@ -344,7 +340,6 @@
     </Compile>
     <Compile Include="layouts\wild.ascx.cs">
       <DependentUpon>wild.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="layouts\wild.ascx.designer.cs">
       <DependentUpon>wild.ascx</DependentUpon>
