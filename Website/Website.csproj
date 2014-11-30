@@ -300,6 +300,11 @@
     <Content Include="App_Config\Include\Glass.Mapper.Sc.Mvc.Config" />
     <Content Include="App_Config\Include\XMLWebApi.config" />
     <Content Include="App_Config\Include\ship.config" />
+    <Content Include="App_Config\Include\SitecoreMvcAreaController.config" />
+    <Content Include="Areas\Common\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Common\Views\TestArea\Index.cshtml" />
+    <Content Include="Areas\Common\Views\web.config" />
+    <Content Include="Areas\Common\Views\_ViewStart.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -331,6 +336,9 @@
     <Compile Include="App_Start\GlassMapperScCustom.cs" />
     <Compile Include="App_Start\GlassMapperScRazor.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="AreaControllerRenderer.cs" />
+    <Compile Include="AreaControllerRendererProcessor.cs" />
+    <Compile Include="AreaControllerRunner.cs" />
     <Compile Include="Controllers\HelloController.cs" />
     <Compile Include="CoreLib\WebItemAPI\SwitchToXmlSerializer.cs" />
     <Compile Include="CoreLib\WebItemAPI\XmlSerializer.cs" />
@@ -371,6 +379,12 @@
     <Folder Include="sitecore modules\debug\" />
     <Folder Include="sitecore modules\Web\" />
     <Folder Include="Web\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{8deb61ce-ef0f-4a7b-a886-c800f610b24e}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
