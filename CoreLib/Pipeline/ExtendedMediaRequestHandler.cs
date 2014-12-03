@@ -41,7 +41,7 @@ namespace CoreLib.Pipeline
                 var siblings = firstGuess.Parent.Children;
 
                 var matches = siblings.Where(t=>t.Paths.Path ==firstGuess.Paths.Path && 
-                    t.Fields["Extensioin"].Value.ToLower() == urlExtenstion).ToList();
+                    t.Fields["Extension"].Value.ToLower() == urlExtenstion).ToList();
                     
                     //from sibling in siblings
                     //          where firstGuess.Paths.Path == sibling.Paths.Path &&

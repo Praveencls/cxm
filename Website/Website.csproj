@@ -207,7 +207,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="App_Config\Commands.config" />
-    <Content Include="App_Config\ConnectionStrings.config" />
+    <Content Include="App_Config\ConnectionStrings.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="App_Config\ConnectionStringsOracle.config" />
     <Content Include="App_Config\FieldTypes.config" />
     <Content Include="App_Config\Icons.config" />
@@ -320,12 +322,11 @@
     <Content Include="sitecore modules\Shell\Glass\Mapper\Razor\BehindRazor.xml" />
     <Content Include="sitecore modules\Shell\Glass\Mapper\Razor\DynamicRazor.xml" />
     <Content Include="sitecore modules\Shell\Glass\Mapper\Razor\TypedRazor.xml" />
+    <Content Include="sitecore\admin\CacheUI.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Hello\Index.cshtml" />
     <Content Include="Views\Layout\desktop.cshtml" />
     <Content Include="Views\viewr.cshtml" />
@@ -378,6 +379,7 @@
     <Folder Include="layouts\debug\" />
     <Folder Include="sitecore modules\debug\" />
     <Folder Include="sitecore modules\Web\" />
+    <Folder Include="Views\Shared\" />
     <Folder Include="Web\" />
   </ItemGroup>
   <ItemGroup>
